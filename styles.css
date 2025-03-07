@@ -194,8 +194,15 @@ h2 {
 
 .lista-contato{
     list-style-type: none;
-    display: grid;             /* tem que adiconar o grid pra conseguir espaçar os elementos */
-    gap: 1em;
+    display: flex;            /* tem que adiconar o grid pra conseguir espaçar os elementos */
+    gap: 0;
+    flex-direction: column;
+}
+
+.lista-contato li,
+.lista-contato p {
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (min-width: 720px) {
@@ -284,8 +291,7 @@ h2 {
 
     .conteudo-contato-texto{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
     }
-
-    
 }
